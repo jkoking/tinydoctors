@@ -1,543 +1,543 @@
 {
-  "name": "Tiny Doctors",
-  "author": "derfreimann + jonathan abucejo",
-  "version": "2.3.0",
-  "private": true,
-  "keywords": [
-    "pebble-app"
-  ],
-  "dependencies": {},
-  "pebble": {
-    "sdkVersion": "3",
-    "targetPlatforms": [
-      "aplite",
-      "basalt",
-      "chalk",
-      "diorite",
-      "emery",
-      "flint"
-    ],
-    "enableMultiJS": false,
-    "capabilities": [
-      ""
-    ],
-    "projectType": "native",
-    "displayName": "Tiny Doctors",
-    "uuid": "49bd0204-262c-4dab-bc88-1b7c3ca4f7ad",
-    "watchapp": {
-      "watchface": true,
-      "hiddenApp": false,
-      "onlyShownOnCommunication": false
-    },
-    "resources": {
-      "media": [
-        {
-          "file": "images/tardis doc 11_2.png",
-          "name": "IMAGE_DOC_11_2",
-          "type": "png"
-        },
-        {
-          "file": "images/tardis doc 04_2.png",
-          "name": "IMAGE_DOC_4_2",
-          "type": "png"
-        },
-        {
-          "file": "images/small icon.png",
-          "menuIcon": true,
-          "name": "IMAGE_MENU_ICON",
-          "type": "png"
-        },
-        {
-          "file": "images/tardis_windows.png",
-          "name": "IMAGE_WINDOWS_AMPM",
-          "type": "png"
-        },
-        {
-          "file": "images/doc12.png",
-          "name": "IMAGE_DOC_12",
-          "type": "png"
-        },
-        {
-          "file": "images/doc01.png",
-          "name": "IMAGE_DOC_1",
-          "type": "png"
-        },
-        {
-          "file": "images/doc02.png",
-          "name": "IMAGE_DOC_2",
-          "type": "png"
-        },
-        {
-          "file": "images/doc03.png",
-          "name": "IMAGE_DOC_3",
-          "type": "png"
-        },
-        {
-          "file": "images/doc04.png",
-          "name": "IMAGE_DOC_4",
-          "type": "png"
-        },
-        {
-          "file": "images/doc05.png",
-          "name": "IMAGE_DOC_5",
-          "type": "png"
-        },
-        {
-          "file": "images/doc06.png",
-          "name": "IMAGE_DOC_6",
-          "type": "png"
-        },
-        {
-          "file": "images/doc07.png",
-          "name": "IMAGE_DOC_7",
-          "type": "png"
-        },
-        {
-          "file": "images/doc08.png",
-          "name": "IMAGE_DOC_8",
-          "type": "png"
-        },
-        {
-          "file": "images/doc08war.png",
-          "name": "IMAGE_SPECIAL_DOC_WAR",
-          "type": "png"
-        },
-        {
-          "file": "images/doc09.png",
-          "name": "IMAGE_DOC_9",
-          "type": "png"
-        },
-        {
-          "file": "images/doc10.png",
-          "name": "IMAGE_DOC_10",
-          "type": "png"
-        },
-        {
-          "file": "images/doc11.png",
-          "name": "IMAGE_DOC_11",
-          "type": "png"
-        },
-        {
-          "file": "images/regenerate.png",
-          "name": "IMAGE_REGEN",
-          "type": "png"
-        },
-        {
-          "file": "images/regenerate_inv.png",
-          "name": "IMAGE_REGEN_INV",
-          "type": "png"
-        },
-        {
-          "file": "images/shadow_trex.png",
-          "name": "IMAGE_EXTRA_TREX",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_zagreus.png",
-          "name": "IMAGE_EXTRA_ZAGREUS",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_vervoid.png",
-          "name": "IMAGE_EXTRA_VERVOID",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_kromon.png",
-          "name": "IMAGE_EXTRA_KROMON",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_liberty.png",
-          "name": "IMAGE_EXTRA_LIBERTY",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_clockworkrobot.png",
-          "name": "IMAGE_EXTRA_CLOCKWORKROBOT",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_androidreaper.png",
-          "name": "IMAGE_EXTRA_ANDROIDREAPER",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_draconian.png",
-          "name": "IMAGE_EXTRA_DRACONIAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_whiterobot.png",
-          "name": "IMAGE_EXTRA_WHITEROBOT",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_monoid.png",
-          "name": "IMAGE_EXTRA_MONOID",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_menoptera.png",
-          "name": "IMAGE_EXTRA_MENOPTERA",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_zarbi.png",
-          "name": "IMAGE_EXTRA_ZARBI",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_daemon.png",
-          "name": "IMAGE_EXTRA_DAEMON",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_captainjack.png",
-          "name": "IMAGE_EXTRA_CAPTAINJACK",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_sycorax.png",
-          "name": "IMAGE_EXTRA_SYCORAX",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_skyhead.png",
-          "name": "IMAGE_EXTRA_SKYHEAD",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_drathro.png",
-          "name": "IMAGE_EXTRA_DRATHRO",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_dragon.png",
-          "name": "IMAGE_EXTRA_DRAGON",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_davros.png",
-          "name": "IMAGE_EXTRA_DAVROS",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_cyberking.png",
-          "name": "IMAGE_EXTRA_CYBERKING",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_alphacentauri.png",
-          "name": "IMAGE_EXTRA_ALPHACENTAURI",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_nimoncousin.png",
-          "name": "IMAGE_EXTRA_NIMONCOUSIN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_viyran.png",
-          "name": "IMAGE_EXTRA_VIYRAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_malus.png",
-          "name": "IMAGE_EXTRA_MALUS",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_idris.png",
-          "name": "IMAGE_EXTRA_IDRIS",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_mara.png",
-          "name": "IMAGE_EXTRA_MARA",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_kandyman.png",
-          "name": "IMAGE_EXTRA_KANDYMAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_molealien.png",
-          "name": "IMAGE_EXTRA_MOLEALIEN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_saturnyne.png",
-          "name": "IMAGE_EXTRA_SATURNYNE",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_crookedman.png",
-          "name": "IMAGE_EXTRA_CROOKEDMAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_judoon.png",
-          "name": "IMAGE_EXTRA_JUDOON",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_faceofboe.png",
-          "name": "IMAGE_EXTRA_FACEOFBOE",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_riversong.png",
-          "name": "IMAGE_EXTRA_RIVERSONG",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_cassandra.png",
-          "name": "IMAGE_EXTRA_CASSANDRA",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_wirrn.png",
-          "name": "IMAGE_EXTRA_WIRRN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_prisonerzero.png",
-          "name": "IMAGE_EXTRA_PRISONERZERO",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_morbius.png",
-          "name": "IMAGE_EXTRA_MORBIUS",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_emptychild.png",
-          "name": "IMAGE_EXTRA_EMPTYCHILD",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_drashig.png",
-          "name": "IMAGE_EXTRA_DRASHIG",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_decayingmaster.png",
-          "name": "IMAGE_EXTRA_DECAYINGMASTER",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_zygon.png",
-          "name": "IMAGE_EXTRA_ZYGON",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_yeti.png",
-          "name": "IMAGE_EXTRA_YETI",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_timelord.png",
-          "name": "IMAGE_EXTRA_TIMELORD",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_snowman.png",
-          "name": "IMAGE_EXTRA_SNOWMAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_sil.png",
-          "name": "IMAGE_EXTRA_SIL",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_satanpit.png",
-          "name": "IMAGE_EXTRA_SATAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_robot.png",
-          "name": "IMAGE_EXTRA_ROBOT",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_quark.png",
-          "name": "IMAGE_EXTRA_QUARK",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_ood.png",
-          "name": "IMAGE_EXTRA_OOD",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_omega.png",
-          "name": "IMAGE_EXTRA_OMEGA",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_ogtardis.png",
-          "name": "IMAGE_EXTRA_OGTARDIS",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_melkur.png",
-          "name": "IMAGE_EXTRA_MELKUR",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_kamelion.png",
-          "name": "IMAGE_EXTRA_KAMELION",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_icewarrior.png",
-          "name": "IMAGE_EXTRA_ICEWARRIOR",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_silurian.png",
-          "name": "IMAGE_EXTRA_SILURIAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_silence.png",
-          "name": "IMAGE_EXTRA_SILENCE",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_adipose.png",
-          "name": "IMAGE_EXTRA_ADIPOSE",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_slitheen.png",
-          "name": "IMAGE_EXTRA_SLITHEEN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/disconnected.png",
-          "name": "IMAGE_DISCONNECTED",
-          "type": "png-trans"
-        },
-        {
-          "characterRegex": "[0-9:]",
-          "compatibility": "2.7",
-          "file": "fonts/handgotb.ttf",
-          "name": "FONT_TIME_24",
-          "type": "font"
-        },
-        {
-          "characterRegex": "[AFJMSOND, a-z, 0-9]",
-          "compatibility": "2.7",
-          "file": "fonts/handgotb.ttf",
-          "name": "FONT_DATE_16",
-          "type": "font"
-        },
-        {
-          "file": "images/blank.png",
-          "name": "IMAGE_EXTRA_00BLANK00",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_watcher.png",
-          "name": "IMAGE_EXTRA_WATCHER",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_sontaran.png",
-          "name": "IMAGE_EXTRA_SONTARAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_k9.png",
-          "name": "IMAGE_EXTRA_K9",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_dalek.png",
-          "name": "IMAGE_EXTRA_DALEK",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_cyberman.png",
-          "name": "IMAGE_EXTRA_CYBERMAN",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/shadow_angel.png",
-          "name": "IMAGE_EXTRA_ANGEL",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/datedither.png",
-          "name": "IMAGE_DATE_DITHER",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_charging.png",
-          "name": "IMAGE_BATTERY_CHARGING",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_00.png",
-          "name": "IMAGE_BATTERY_00",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_10.png",
-          "name": "IMAGE_BATTERY_10",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_20.png",
-          "name": "IMAGE_BATTERY_20",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_30.png",
-          "name": "IMAGE_BATTERY_30",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_40.png",
-          "name": "IMAGE_BATTERY_40",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_50.png",
-          "name": "IMAGE_BATTERY_50",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_60.png",
-          "name": "IMAGE_BATTERY_60",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_70.png",
-          "name": "IMAGE_BATTERY_70",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_80.png",
-          "name": "IMAGE_BATTERY_80",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_90.png",
-          "name": "IMAGE_BATTERY_90",
-          "type": "png-trans"
-        },
-        {
-          "file": "images/battery_100.png",
-          "name": "IMAGE_BATTERY_100",
-          "type": "png-trans"
-        }
-      ]
-    },
-    "messageKeys": {}
-  }
+	"name": "Tiny Doctors",
+	"author": "derfreimann + jonathan abucejo",
+	"version": "2.3.0",
+	"private": true,
+	"keywords": [
+		"pebble-app"
+	],
+	"dependencies": {},
+	"pebble": {
+		"sdkVersion": "3",
+		"targetPlatforms": [
+			"aplite",
+			"basalt",
+			"chalk",
+			"diorite",
+			"emery",
+			"flint"
+		],
+		"enableMultiJS": false,
+		"capabilities": [
+			""
+		],
+		"projectType": "native",
+		"displayName": "Tiny Doctors",
+		"uuid": "49bd0204-262c-4dab-bc88-1b7c3ca4f7ad",
+		"watchapp": {
+			"watchface": true,
+			"hiddenApp": false,
+			"onlyShownOnCommunication": false
+		},
+		"resources": {
+			"media": [
+				{
+					"file": "images/tardis doc 11_2.png",
+					"name": "IMAGE_DOC_11_2",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/tardis doc 04_2.png",
+					"name": "IMAGE_DOC_4_2",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/small icon.png",
+					"menuIcon": true,
+					"name": "IMAGE_MENU_ICON",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/tardis_windows.png",
+					"name": "IMAGE_WINDOWS_AMPM",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc12.png",
+					"name": "IMAGE_DOC_12",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc01.png",
+					"name": "IMAGE_DOC_1",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc02.png",
+					"name": "IMAGE_DOC_2",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc03.png",
+					"name": "IMAGE_DOC_3",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc04.png",
+					"name": "IMAGE_DOC_4",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc05.png",
+					"name": "IMAGE_DOC_5",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc06.png",
+					"name": "IMAGE_DOC_6",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc07.png",
+					"name": "IMAGE_DOC_7",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc08.png",
+					"name": "IMAGE_DOC_8",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc08war.png",
+					"name": "IMAGE_SPECIAL_DOC_WAR",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc09.png",
+					"name": "IMAGE_DOC_9",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc10.png",
+					"name": "IMAGE_DOC_10",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/doc11.png",
+					"name": "IMAGE_DOC_11",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/regenerate.png",
+					"name": "IMAGE_REGEN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/regenerate_inv.png",
+					"name": "IMAGE_REGEN_INV",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_trex.png",
+					"name": "IMAGE_EXTRA_TREX",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_zagreus.png",
+					"name": "IMAGE_EXTRA_ZAGREUS",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_vervoid.png",
+					"name": "IMAGE_EXTRA_VERVOID",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_kromon.png",
+					"name": "IMAGE_EXTRA_KROMON",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_liberty.png",
+					"name": "IMAGE_EXTRA_LIBERTY",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_clockworkrobot.png",
+					"name": "IMAGE_EXTRA_CLOCKWORKROBOT",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_androidreaper.png",
+					"name": "IMAGE_EXTRA_ANDROIDREAPER",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_draconian.png",
+					"name": "IMAGE_EXTRA_DRACONIAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_whiterobot.png",
+					"name": "IMAGE_EXTRA_WHITEROBOT",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_monoid.png",
+					"name": "IMAGE_EXTRA_MONOID",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_menoptera.png",
+					"name": "IMAGE_EXTRA_MENOPTERA",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_zarbi.png",
+					"name": "IMAGE_EXTRA_ZARBI",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_daemon.png",
+					"name": "IMAGE_EXTRA_DAEMON",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_captainjack.png",
+					"name": "IMAGE_EXTRA_CAPTAINJACK",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_sycorax.png",
+					"name": "IMAGE_EXTRA_SYCORAX",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_skyhead.png",
+					"name": "IMAGE_EXTRA_SKYHEAD",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_drathro.png",
+					"name": "IMAGE_EXTRA_DRATHRO",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_dragon.png",
+					"name": "IMAGE_EXTRA_DRAGON",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_davros.png",
+					"name": "IMAGE_EXTRA_DAVROS",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_cyberking.png",
+					"name": "IMAGE_EXTRA_CYBERKING",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_alphacentauri.png",
+					"name": "IMAGE_EXTRA_ALPHACENTAURI",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_nimoncousin.png",
+					"name": "IMAGE_EXTRA_NIMONCOUSIN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_viyran.png",
+					"name": "IMAGE_EXTRA_VIYRAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_malus.png",
+					"name": "IMAGE_EXTRA_MALUS",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_idris.png",
+					"name": "IMAGE_EXTRA_IDRIS",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_mara.png",
+					"name": "IMAGE_EXTRA_MARA",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_kandyman.png",
+					"name": "IMAGE_EXTRA_KANDYMAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_molealien.png",
+					"name": "IMAGE_EXTRA_MOLEALIEN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_saturnyne.png",
+					"name": "IMAGE_EXTRA_SATURNYNE",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_crookedman.png",
+					"name": "IMAGE_EXTRA_CROOKEDMAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_judoon.png",
+					"name": "IMAGE_EXTRA_JUDOON",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_faceofboe.png",
+					"name": "IMAGE_EXTRA_FACEOFBOE",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_riversong.png",
+					"name": "IMAGE_EXTRA_RIVERSONG",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_cassandra.png",
+					"name": "IMAGE_EXTRA_CASSANDRA",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_wirrn.png",
+					"name": "IMAGE_EXTRA_WIRRN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_prisonerzero.png",
+					"name": "IMAGE_EXTRA_PRISONERZERO",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_morbius.png",
+					"name": "IMAGE_EXTRA_MORBIUS",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_emptychild.png",
+					"name": "IMAGE_EXTRA_EMPTYCHILD",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_drashig.png",
+					"name": "IMAGE_EXTRA_DRASHIG",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_decayingmaster.png",
+					"name": "IMAGE_EXTRA_DECAYINGMASTER",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_zygon.png",
+					"name": "IMAGE_EXTRA_ZYGON",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_yeti.png",
+					"name": "IMAGE_EXTRA_YETI",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_timelord.png",
+					"name": "IMAGE_EXTRA_TIMELORD",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_snowman.png",
+					"name": "IMAGE_EXTRA_SNOWMAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_sil.png",
+					"name": "IMAGE_EXTRA_SIL",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_satanpit.png",
+					"name": "IMAGE_EXTRA_SATAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_robot.png",
+					"name": "IMAGE_EXTRA_ROBOT",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_quark.png",
+					"name": "IMAGE_EXTRA_QUARK",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_ood.png",
+					"name": "IMAGE_EXTRA_OOD",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_omega.png",
+					"name": "IMAGE_EXTRA_OMEGA",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_ogtardis.png",
+					"name": "IMAGE_EXTRA_OGTARDIS",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_melkur.png",
+					"name": "IMAGE_EXTRA_MELKUR",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_kamelion.png",
+					"name": "IMAGE_EXTRA_KAMELION",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_icewarrior.png",
+					"name": "IMAGE_EXTRA_ICEWARRIOR",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_silurian.png",
+					"name": "IMAGE_EXTRA_SILURIAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_silence.png",
+					"name": "IMAGE_EXTRA_SILENCE",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_adipose.png",
+					"name": "IMAGE_EXTRA_ADIPOSE",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_slitheen.png",
+					"name": "IMAGE_EXTRA_SLITHEEN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/disconnected.png",
+					"name": "IMAGE_DISCONNECTED",
+					"type": "bitmap"
+				},
+				{
+					"characterRegex": "[0-9:]",
+					"compatibility": "2.7",
+					"file": "fonts/handgotb.ttf",
+					"name": "FONT_TIME_24",
+					"type": "font"
+				},
+				{
+					"characterRegex": "[AFJMSOND, a-z, 0-9]",
+					"compatibility": "2.7",
+					"file": "fonts/handgotb.ttf",
+					"name": "FONT_DATE_16",
+					"type": "font"
+				},
+				{
+					"file": "images/blank.png",
+					"name": "IMAGE_EXTRA_00BLANK00",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_watcher.png",
+					"name": "IMAGE_EXTRA_WATCHER",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_sontaran.png",
+					"name": "IMAGE_EXTRA_SONTARAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_k9.png",
+					"name": "IMAGE_EXTRA_K9",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_dalek.png",
+					"name": "IMAGE_EXTRA_DALEK",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_cyberman.png",
+					"name": "IMAGE_EXTRA_CYBERMAN",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/shadow_angel.png",
+					"name": "IMAGE_EXTRA_ANGEL",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/datedither.png",
+					"name": "IMAGE_DATE_DITHER",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_charging.png",
+					"name": "IMAGE_BATTERY_CHARGING",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_00.png",
+					"name": "IMAGE_BATTERY_00",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_10.png",
+					"name": "IMAGE_BATTERY_10",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_20.png",
+					"name": "IMAGE_BATTERY_20",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_30.png",
+					"name": "IMAGE_BATTERY_30",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_40.png",
+					"name": "IMAGE_BATTERY_40",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_50.png",
+					"name": "IMAGE_BATTERY_50",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_60.png",
+					"name": "IMAGE_BATTERY_60",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_70.png",
+					"name": "IMAGE_BATTERY_70",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_80.png",
+					"name": "IMAGE_BATTERY_80",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_90.png",
+					"name": "IMAGE_BATTERY_90",
+					"type": "bitmap"
+				},
+				{
+					"file": "images/battery_100.png",
+					"name": "IMAGE_BATTERY_100",
+					"type": "bitmap"
+				}
+			]
+		},
+		"messageKeys": {}
+	}
 }
